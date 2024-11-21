@@ -80,7 +80,7 @@ resource "aws_security_group" "my_sg" {
 
 
 resource "aws_instance" "my_ec2" {
-  ami                    = "ami-04dd23e62ed049936"
+  ami                    = "ami-0084a47cc718c111a"
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.public_subnet.id
   vpc_security_group_ids = [aws_security_group.my_sg.id]
